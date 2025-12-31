@@ -4,9 +4,9 @@ typedef vector<string> vs;
 typedef pair<int, int> pii;
 typedef vector<pii> vpii;
 
-#define uset unordered_set<int>
+template<typename T> using uset = unordered_set<T>; 
 #define usll unordered_set<ll>
-#define umap unordered_map<int, int>
+template<typename K, typename V> using umap = unordered_map<K, V>;
 
 #define SORT(a) sort(a.begin(), a.end())
 #define REVERSE(a) reverse(a.begin(), a.end())
@@ -20,36 +20,34 @@ typedef vector<pii> vpii;
 #define llmn LLONG_MIN
 #define mod 1000000007LL
 
-#define YES cout << "YES" << endl;
-#define NO cout << "NO" << endl;
+#define YES cout << "YES" << '\n' 
+#define NO cout << "NO" << '\n'
 
 #define prnt(a) cout << a << "\n"
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 #define FORr(i, a, b) for (int i = (a); i >= (b); i--)
-#define PrintPair(x) cout << x.first << " " << x.second << endl
-#define itrALL(c, itr) for (__typeof((c).begin()) itr = (c).begin(); itr != (c).end(); itr++)
+#define PrintPair(x) cout << x.first << " " << x.second << '\n'
+#define itrALL(c, itr) for (auto itr = (c).begin(); itr != (c).end(); itr++)
 #define VecPrnt(v)       \
     FOR(J, 0, v.size())  \
     cout << v[J] << " "; \
-    cout << endl
+    cout << '\n'
 #define ArrPrint(a, st, en)        \
     for (int J = st; J <= en; J++) \
         cout << a[J] << " ";       \
-    cout << endl;
-#define endl "\n"
+    cout << '\n';
 
 #define pb push_back
 #define inf 1e9
 #define INF 1e16
 #define MAX 100005
-#define debug(a, b) cout << a << ": " << b << endl
-#define Debug cout << "Reached here" << endl
+#define debug(a, b) cout << a << ": " << b << '\n'
+#define Debug cout << "Reached here" << '\n'
 #define lc ((node) << 1)
 #define rc ((node) << 1 | 1)
 #define EPS 1e-9
 #define PI acos(-1)
 #define ms(x, y) memset(x, y, sizeof(x))
-
 
 /* Direction Array
 
