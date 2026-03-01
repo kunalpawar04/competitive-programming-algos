@@ -1,33 +1,67 @@
+// Declaration shortcuts
 typedef long long ll;
 typedef vector<int> vi;
+typedef vector<ll> vll;
 typedef vector<string> vs;
 typedef pair<int, int> pii;
 typedef vector<pii> vpii;
-
+typedef unordered_set<ll> usll;
 template<typename T> using uset = unordered_set<T>; 
-#define usll unordered_set<ll>
 template<typename K, typename V> using umap = unordered_map<K, V>;
 
-#define SORT(a) sort(a.begin(), a.end())
-#define REVERSE(a) reverse(a.begin(), a.end())
-#define ALL(a) a.begin(), a.end()
-
-#define MP make_pair
-#define vll vector<ll>
+// Constant shortcuts
+#define mod 1000000007LL
 #define imax INT_MAX
 #define imin INT_MIN
 #define llmx LLONG_MAX
 #define llmn LLONG_MIN
-#define mod 1000000007LL
+#define inf 1e9
+#define INF 1e16
 
-#define YES cout << "YES" << '\n' 
-#define NO cout << "NO" << '\n'
+#define pb push_back
+#define SZ(x) x.size()
 
-#define prnt(a) cout << a << "\n"
+// Vector shortcuts
+#define SORT(a) sort(ALL(a))
+#define REVERSE(a) reverse(ALL(a))
+#define RSORT(v) sort((v).rbegin(), (v).rend())
+#define ALL(a) (a).begin(), (a).end()
+#define SUM(v) accumulate(ALL(v), 0LL)
+#define LB(v, x) (lower_bound(ALL(v), x) - (v).begin())
+#define UB(v, x) (upper_bound(ALL(v), x) - (v).begin())
+#define BS(v, x) binary_search(ALL(v), x)
+
+// Traversal shortcuts
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 #define FORr(i, a, b) for (int i = (a); i >= (b); i--)
-#define PrintPair(x) cout << x.first << " " << x.second << '\n'
 #define itrALL(c, itr) for (auto itr = (c).begin(); itr != (c).end(); itr++)
+
+// Math ops shortcuts
+#define GCD(a,b) __gcd(a,b)
+#define LCM(a,b) ((a)/__gcd(a,b)*(b))
+
+// Bitwise ops shortcuts
+#define setbit(x,i) (x | (1LL << i))
+#define clearbit(x,i) (x & ~(1LL << i))
+#define checkbit(x,i) ((x >> i) & 1)
+
+// Pair shortcuts
+#define F first
+#define S second
+#define MP make_pair
+
+#define FAST ios::sync_with_stdio(false); cin.tie(NULL);
+#define debug(a, b) cout << a << ": " << b << '\n'
+#define Debug cout << "Reached here" << '\n'
+#define lc ((node) << 1)
+#define rc ((node) << 1 | 1)
+#define ms(x, y) memset(x, y, sizeof(x))
+
+// Printing shortcuts
+#define YES cout << "YES" << '\n' 
+#define NO cout << "NO" << '\n'
+#define prnt(a) cout << a << "\n"
+#define PrintPair(x) cout << x.first << " " << x.second << '\n'
 #define VecPrnt(v)       \
     FOR(J, 0, v.size())  \
     cout << v[J] << " "; \
@@ -36,18 +70,6 @@ template<typename K, typename V> using umap = unordered_map<K, V>;
     for (int J = st; J <= en; J++) \
         cout << a[J] << " ";       \
     cout << '\n';
-
-#define pb push_back
-#define inf 1e9
-#define INF 1e16
-#define MAX 100005
-#define debug(a, b) cout << a << ": " << b << '\n'
-#define Debug cout << "Reached here" << '\n'
-#define lc ((node) << 1)
-#define rc ((node) << 1 | 1)
-#define EPS 1e-9
-#define PI acos(-1)
-#define ms(x, y) memset(x, y, sizeof(x))
 
 /* Direction Array
 
