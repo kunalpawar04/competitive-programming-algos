@@ -19,7 +19,7 @@ template<typename K, typename V> using umap = unordered_map<K, V>;
 #define INF 1e16
 
 #define pb push_back
-#define SZ(x) x.size()
+#define sz size
 
 // Vector shortcuts
 #define SORT(a) sort(ALL(a))
